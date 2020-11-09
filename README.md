@@ -1,2 +1,4 @@
 # movieflix_ddl_sql
-this is sql for ddl implementation from movieflix logical design
+Hi everyone,
+
+This is repo for my exam final project learning sql database
