@@ -1,0 +1,190 @@
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Brad Pitt', 'William', 'Pitt','18-DEC-1963');
+
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Will Smith', 'Willard', 'Smith','25-SEP-1968');
+
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Mark Ruffalo', 'Mark', 'Rufallo','22-NOV-1967');
+
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Emma Watson', 'Emma', 'Watson','15-APR-1990');
+
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Tom Hanks', 'Thomas', 'Hanks','09-JUL-1956');
+
+INSERT INTO actors
+(actor_id, stage_name, first_name, last_name, birth_date)
+VALUES
+(actor_id_seq.NEXTVAL,'Robert Downey Jr', 'Robert', 'Jr','04-APR-1965');
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Palombo', 'Lisa', '716-270-2669','123 Main St','Buffalo','NY','palombo@ecc.edu','716-555-1212');
+
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Pal', 'No', '716-270-2668','1234 Main St','Buffalo','NY','no@ecc.edu','716-555-1213');
+
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Ship', 'Friend', '716-270-2660','ABC Main St','Rochester','NY','ship@ecc.edu','716-555-1214');
+
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Holmes', 'Sherlock', '716-270-2661','Baker St','London','UK','holmes@gmail.com','716-555-1215');
+//JK
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Goku', 'Son', '716-270-2662','Dragon Ball St','West City','OL','goku@ecc.edu','716-555-1216');
+
+INSERT INTO costumers
+(costumer_id, last_name, first_name, home_phone, address, city, state, email, cell_phone)
+VALUES
+(cust_id_seq.NEXTVAL,'Sakuragi', 'Hanamichi', '716-270-2663','Shibuya St','Shibuya','JP','sakuragi@ymail.com','716-555-1217');
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'World War Z', 'World War Z is a 2013 American apocalyptic action horror film directed by Marc Forster, based on the 2006 novel of the same name by Max Brooks. The story about the world against zombie.', 'PG13','ACTION','21-JUN-2013');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'I Am Legend', 'Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure in this post-apocalyptic action thriller.', 'PG13','ACTION','14-DEC-2007');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Now You See Me', 'An F.B.I. Agent and an Interpol Detective track a team of illusionists who pull off bank heists during their performances, and reward their audiences with the money.', 'PG13','ACTION','31-MAY-2013');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Harry Potter and the Sorcerers Stone', 'An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.', 'PG','ACTION','16-NOV-2001');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Cast Away', 'A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.', 'PG13','DRAMA','22-DEC-2000');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Iron Man', 'After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.', 'PG13','SCIFI','02-MAY-2008');
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('19-SEP-2013','20-SEP-2013',101,901);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('21-SEP-2013','23-SEP-2013',121,902);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('20-SEP-2013','22-SEP-2013',101,905);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('20-OCT-2010','21-OCT-2010',141,907);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('20-APR-2010','21-MAY-2010',111,903);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+('20-APR-2009','29-APR-2009',151,909);
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('Hero/Lead',1,1001);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('The Legend',11,1011);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('The Head',21,1021);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('Woman friend of the mainlead',31,1031);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('Amazing acting for mainlead',41,1041);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+('Cool but at the same time arrogant lead',51,1051);
+
+INSERT INTO star_billings
+("comment", movies_title_id, actors_actor_id)
+VALUES
+(123,51,1041);
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Iron Man 2',NULL,'PG13','SCIFI','07-MAY-2010');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Iron Man 2','With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his fathers legacy.','P','SCIFI','07-MAY-2010');
+
+INSERT INTO movies
+(title_id, title, description, rating, category, release_date)
+VALUES
+(title_id_seq.NEXTVAL,'Iron Man 2','With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his fathers legacy.','PG13','MARVEL','07-MAY-2010');
+
+INSERT INTO media
+(media_id, format, movies_title_id)
+VALUES
+(901,'VCD',51);
+
+INSERT INTO media
+(media_id, format, movies_title_id)
+VALUES
+('991','VCD',51);
+
+DELETE from media
+WHERE media_id = '991'
+
+select * from media
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+(NULL,'29-APR-2009',151,908);
+
+INSERT INTO rental_history
+(rental_date, return_date, costumers_costumer_id, media_media_id)
+VALUES
+(123,'29-APR-2009',151,908);
